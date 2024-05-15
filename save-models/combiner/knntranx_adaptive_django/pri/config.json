@@ -1,0 +1,9 @@
+{
+      "max_k": 64,
+      "probability_dim": 154,
+      "k_trainable": true,
+      "lambda_trainable": true,
+      "temperature_trainable": true,
+      "lambda_": 0.7,
+      "temperature": 10
+}

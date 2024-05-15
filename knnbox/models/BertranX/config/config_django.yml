@@ -1,0 +1,47 @@
+name: config
+experiment_env:
+
+  # model_parameters
+  nl_embed_size                   : 256
+  action_embed_size               : 256
+  hidden_size                     : 512
+  att_size                        : 512
+  field_embed_size                : 64
+  type_embed_size                 : 64
+  cardinality_embed_size          : 16
+  dropout_encoder                 : 0
+  dropout_decoder                 : 0.6
+  model                           : "bert"
+  n_layers                        : 1
+  beam_size                       : 20
+  lr                              : 0.00005
+  lr_decay                        : 0.000005
+  lr_decay_after_epoch            : 25
+  max_num_trial                   : 5
+  patience                        : 3
+  readout                         : "identity"
+  query_vec_to_action_diff_map    : False
+  primitive_token_label_smoothing : 0.0
+  len_max                         : 150
+  copy                            : True
+  glove                           : False
+  parent_feeding_field            : False
+  parent_feeding_type             : False
+
+  # dataset_parameters
+  dataset                         : "django"
+  mode                            : "train"
+  train                           : True
+  test                            : True
+  number_merge_ex                 : 0
+  create_vocab                    : True
+  word_freq                       : 1
+  metric                          : 'BLEU'
+  change_term_name                : True
+
+  # train_parameters
+  batch_size                      : 16
+  epochs                          : 40
+  log_every                       : 5
+  seed                            : 2200
+  GPU                             : 0
